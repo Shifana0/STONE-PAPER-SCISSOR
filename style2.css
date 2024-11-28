@@ -1,0 +1,333 @@
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#101e36,black);
+    display: flex;
+}
+.circle{
+    width: 134px;
+    height: 150px;
+    background-color: black;
+    border: 8px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 32%;
+    top: 70%;
+    margin: 10px;
+}
+#choice{
+    width: 134px;
+    height: 150px;
+    background-color: white;
+    border: 15px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30%;
+    left: -16%;
+}
+#choice img{
+    transform: rotate(30deg);
+}
+#computerchoice{
+    width: 134px;
+    height: 150px;
+    background-color: white;
+    border: 15px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30%;
+    left: 22%;
+}
+#computerchoice img{
+    transform: rotate(-30deg);
+}
+img{
+    width: 75px;
+    height: 100px;
+}
+.score-container{
+    background-color: #101e36;
+    border: 1px solid white;
+    width: 500px;
+    border-radius: 5px;
+    height: 100px;
+    position: relative;
+    left: -390px;
+    top: 12px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2%;
+}
+ #playerscore{
+    background-color: white;
+    height: 90px;
+    width: 130px;
+margin: 6px;
+    text-align: center;
+    color: #101e36;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ #computerscore{
+    background-color: white;
+    height: 90px;
+    width: 130px;
+   margin: 6px;
+  margin-left: -9px;
+    text-align: center;
+    color: #101e36;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+#result{
+    display: none;
+}
+#title{
+    color: white;
+    position: relative;
+    left: -130px;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.score{
+    color: #101e36;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+ 
+    font-size: 60px;
+   
+}
+
+#restart{
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+     background-color: white;
+    position: relative;
+    top:-26%; 
+    border-radius: 16px;
+    box-shadow: 2px 2px 2px;
+    font-size: large;
+    /* left: -130px;      */
+}
+
+/* 
+    #final{
+        font-size: 29px;
+        margin-top: 20px;
+        height: 300px;
+    } */
+    #restart{
+        margin-top: 20px;
+       position: relative;
+       top: -150px;
+       width: auto;
+    }
+    #final {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    padding: 20px; 
+    text-align: center; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    width: 100%;
+    z-index: 1000;
+    font-size: 43px;
+    line-height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+    @media all and (max-width:320px){
+        .circle{
+            width: 70px;
+            height: 90px;
+            position: relative;
+            left: 20px;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        #choice{
+            width: 200px;
+            height: 100px;
+            position: relative;
+            left:-200px;
+            border: 5px solid gray;
+        }
+       
+        #computerchoice{
+            position: relative;
+            left: -34%;
+            width: 300px;
+            height: 90px;
+            border: 5px solid gray;
+        }
+        .score-container{
+            width: 990px;
+            position: relative;
+            left: -94%;
+        }
+        #title{
+            /* position: absolute;
+            left: -50%; */
+            display: none;
+        }
+        #computerscore,#playerscore{
+            width: 80px;
+            margin: 1px;
+            margin-top: 4px;
+        }
+        .score{
+            position: relative;
+            top: 21px;
+            line-height: 1px;
+            font-size: 30px;
+        }
+        #final{
+            font-size: 20px;
+            height: 400px !important;
+        }
+    }
+   
+
+   @media all and (min-width:768px) and (max-width:1024px){
+    .score-container{
+        position: relative;
+        left:-34%;
+        width: 400px;
+    }
+    #title{
+        position: relative;
+        left: 3%;
+    }
+    #computerchoice{
+        position: relative;
+        left: 9%;
+        width: 134px;
+    height: 150px;
+    }
+    .score{
+          
+        margin-top: 0px;
+        line-height: 100px;
+    }
+    #choice img,#computerchoice img{
+        width: 74px;
+        height: 74px;
+    }
+    
+}
+
+    
+   @media all and (max-width:768px){
+    .circle{
+        position: relative;
+        top: 490px;
+        width: 134px;
+        height: 100px;
+    }
+    #choice,#computerchoice{
+        width: 154px;
+        height: 120px;
+        
+    }
+    #choice{
+        border: 5px solid gray;
+    }
+    #computerchoice{
+        border: 7px solid gray;
+    }
+   }
+   @media all and (min-width:375px) and (max-width:425px){
+    #title{
+        position: relative;
+        left: 10px;
+    }
+    body{
+   
+    overflow: hidden;
+
+    }
+    #choice{
+        position: relative;
+        left: -53%;
+        top: 38%;
+        width: 200px;
+        height: 100px;
+    }
+    #computerchoice{
+        position: relative;
+        left: -15%;
+        top: 38%;
+        width: 100px;
+        height: 100px;
+    }
+    .score-container{
+        position: relative;
+        margin-left: 23px;
+    
+    }
+   #final{
+    font-size: 24px;
+   }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+.circle{
+    position: relative;
+    left: 50px;
+}
+   }
+   @media all and (min-width:425px) and (max-width:760px){
+    #choice{
+        position: relative;
+        left: -65%;
+        
+    }
+    .score-container{
+      margin-left: -80px;
+    }
+    #computerchoice{
+        position: relative;
+        left: -29%;
+    }
+    #title{
+     position: relative;
+     left: 10px;
+    }
+    .circle{
+       position: relative;
+       left: 38px;
+    }
+    #final{
+        font-size: 28px;
+    }
+   }

@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+h1{
+font-size: 150px;
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: white;
+margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+input{
+    display: none;
+}
+#start{
+    padding: 10px;
+    width: 100px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 16px;
+    border: none;
+    margin-top: -90px;
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    background-image: linear-gradient(#101e36,black);
+}
+
+li{
+    list-style: none;
+    font-weight: bold;
+    font-size: large;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    background-color: #101e36;
+    color: white;
+    margin: 0;
+    padding-top: 20px;
+}
+label{
+    display: none;
+}
+
+
+
+
+@media(min-width:320px) and (max-width:769px){
+    ul{
+        display: none;
+    }
+    h1{
+        font-size: 60px;
+      position:absolute;
+      top:160px;
+      line-height: 80px;
+    }
+    input{
+        display: none;
+     }
+    label{
+        display: block;
+      padding-left: 10px;
+      padding-top: 10px;
+      font-size: 30px;
+    }
+    #check:checked~ul{
+        display: block;
+       
+    }
+    
+    li{
+        position: relative;
+        left: -20px;
+        line-height: 30px;
+       
+        color: white; 
+        top: -24px; 
+        width: 100px;
+        
+    }
+    #start{
+        position: absolute;
+        top: 500px;
+    }
+    #check{
+        display: none;
+    }
+    label{
+        background-color: #101e36;
+    }
+}
